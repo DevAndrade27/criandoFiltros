@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Biblioteca Virtual</h1>
+    <p>Filtre os livros por categoria</p>
+  </header>
+
+  <section class="filtros">
+    <button class="btn front-end" id="frontend" value="front-end">Front-end</button>
+    <button class="btn back-end" id="backend" value="back-end">Back-end</button>
+    <button class="btn dados" id="dados" value="dados">Dados</button>
+    <button class="todos" id="todos" value="todos">Todos</button>
+    <button class="btn ordenarPreçosCrescente" id="ordenar" value="ordenar">Ordenar</button>
+    <button class="btn disponibilidade" id="disponivel" value="disponivel">Disponiveis</button>
+    
+  </section>
+
+  <main>
+    <div id="livros" class="lista-livros">
+      <!-- Os livros serão exibidos aqui via JS -->
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+  <script src="exibirLivros.js"></script>
+  <script src="botoes.js"></script>
+  <script src="metodoOrdenar.js"></script>
+</body>
+</html>
