@@ -16,7 +16,6 @@
     <button class="btn front-end" id="frontend" value="front-end">Front-end</button>
     <button class="btn back-end" id="backend" value="back-end">Back-end</button>
     <button class="btn dados" id="dados" value="dados">Dados</button>
-    <button class="todos" id="todos" value="todos">Todos</button>
     <button class="btn ordenarPreçosCrescente" id="ordenar" value="ordenar">Ordenar</button>
     <button class="btn disponibilidade" id="disponivel" value="disponivel">Disponiveis</button>
     
@@ -27,10 +26,16 @@
       <!-- Os livros serão exibidos aqui via JS -->
     </div>
   </main>
+   <section id="valor_total_livros_disponiveis">
+    <div class="livros__disponiveis">
+      <p>Todos os livros disponíveis por R$ <span id="valor">${valorTotal}</span></p>
+    </div>
+  </section>
 
   <script src="main.js"></script>
   <script src="exibirLivros.js"></script>
   <script src="botoes.js"></script>
   <script src="metodoOrdenar.js"></script>
+  <script src="valorTotal.js"></script>
 </body>
 </html>

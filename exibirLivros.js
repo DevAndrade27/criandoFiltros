@@ -2,7 +2,7 @@ const elementoParaInserirLivros = document.getElementById("livros")
 
  function exibirLivrosNaTela(Listalivros) {
     elementoParaInserirLivros.innerHTML = ""
-    
+      valorTotalDisponiveis.innerHTML = ''
     Listalivros.forEach(livro => {
         let disponibilidade = livro.quantidade > 0 ? 'livro__imagens' : "indisponivel"
          elementoParaInserirLivros.innerHTML += `
